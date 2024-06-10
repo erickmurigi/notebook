@@ -1,0 +1,36 @@
+# Create a new note
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+    "title": "Sample Note",
+    "content": "This is the content of the sample note."
+}
+
+
+
+###
+
+# Fetch all notes
+GET http://localhost:3000/notes/
+
+###
+
+# Get a single note by ID
+GET http://localhost:3000/notes/1
+
+###
+
+# Update a note by ID
+PUT http://localhost:3000/notes/1
+Content-Type: application/json
+
+{
+    "title": "Updated Note Title",
+    "content": "This is the updated content of the note."
+}
+
+###
+
+# Delete a note by ID
+DELETE http://localhost:3000/notes/1
